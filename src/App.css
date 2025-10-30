@@ -1,0 +1,30 @@
+.allJobsCon {
+  border: 1px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  width: 110rem;
+  height: 60rem;
+  padding: 2rem;
+  
+} 
+
+.JobCard {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  width: 25rem;
+  height: 20rem;
+  margin: 3rem;
+  margin-left: 4rem;
+}
+
+.btns {
+  border: 1px solid blue;
+  /* justify-content: ; */
+  gap: 4rem;
+
+  display: flex;
+
+}
