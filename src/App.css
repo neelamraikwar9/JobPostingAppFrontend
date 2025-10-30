@@ -2,9 +2,9 @@
   border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
-  width: 95rem;
+  width: 90rem;
   height: 60rem;
-  padding: 2rem;
+  padding: 1rem;
   
 } 
 
@@ -14,10 +14,10 @@
   flex-direction: column;
 
   padding: 2rem;
-  width: 25rem;
+  width: 20rem;
   height: 20rem;
-  margin: 3rem;
-  margin-left: 4rem;
+  margin: 1rem;
+  
 }
 
 .btns {
