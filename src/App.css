@@ -2,7 +2,7 @@
   border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
-  width: 90rem;
+  width: 80rem;
   height: 60rem;
   padding: 1rem;
   
@@ -14,8 +14,8 @@
   flex-direction: column;
 
   padding: 2rem;
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   margin: 1rem;
   
 }
