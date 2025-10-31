@@ -66,31 +66,31 @@ const PostAJob = () => {
 
   return (
     <main>
-    <h1>Post a Job</h1>
+    <h1 style={{padding: '3rem'}}>Post a Job</h1>
     
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{padding: '3rem', display: 'flex', flexDirection: 'column', gap: '2rem'}}>
     <div>
-    <label htmlFor="tit">Job Title: </label>
+    <label htmlFor="tit" className="lable">Job Title: </label>
     <input type="text" id="tit" name="title" value={form.title} onChange={handleChange}/>
     </div>
 
     <div>
-    <label htmlFor="com">Company Name: </label>
+    <label htmlFor="com" className="lable">Company Name: </label>
     <input type="text" id="com" name="companyName" value={form.companyName} onChange={handleChange}/>
     </div>
 
     <div>
-    <label htmlFor="loc">Location: </label>
+    <label htmlFor="loc" className="lable">Location: </label>
     <input type="text" id="loc" name="location" value={form.location} onChange={handleChange}/>
     </div>
 
     <div>
-    <label htmlFor="sal">Salary: </label>
+    <label htmlFor="sal" className="lable">Salary: </label>
     <input type="number" id="sal" name="salary" value={form.salary} onChange={handleChange}/>
     </div>
 
     <div>
-    <label htmlFor="typ">Job Type: </label>
+    <label htmlFor="typ" className="lable">Job Type: </label>
     <select type="text" id="typ" name="jobType" value={form.jobType} onChange={handleChange}>
       <option value="" >Full-time (On-site)</option>
       <option value="Full-time (On-site)">Full-time (On-site)</option>
@@ -101,17 +101,17 @@ const PostAJob = () => {
     </div>
 
     <div>
-    <label htmlFor="des">Job Description: </label>
+    <label htmlFor="des" className="lable">Job Description: </label>
     <input type="text" id="des" name="jobDescription" value={form.jobDescription} onChange={handleChange}/>
     </div>
 
     <div>
-    <label htmlFor="des">Job Qualifications: </label>
+    <label htmlFor="des" className="lable">Job Qualifications: </label>
     <input type="text" id="des" name="qualifications" value={form. qualifications} onChange={handleChange}/>
     </div>
-    <br/>
+  
 
-    <button type="submit">Post Job</button>
+    <button type="submit" style={{width: '10rem', backgroundColor: 'oklch(62.3% 0.214 259.815)'}}>Post Job</button>
     </form>
    
 

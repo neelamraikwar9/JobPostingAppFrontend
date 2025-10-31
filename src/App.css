@@ -1,6 +1,6 @@
 
 .mainCon {
-  border: 3px solid rgb(206, 53, 53);
+  /* border: 3px solid rgb(206, 53, 53); */
   padding: 1rem;
 }
 
@@ -10,14 +10,14 @@
 
 
 .allJobsCon {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   display: flex;
   flex-wrap: wrap;
   width: 75rem;
   /* height: 60rem; */
   padding: 1rem;
   margin-bottom: 1.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 
 }
 
@@ -66,4 +66,34 @@
 .seeDetail:hover {
   background-color: oklch(62.3% 0.214 259.815);
   border-color: oklch(62.3% 0.214 259.815);
+}
+
+
+.search{
+  
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+  
+}
+
+.seachbar {
+
+  font-size: 1.3rem;
+  width: 30rem;
+  border-radius: 0.3rem;
+  border-color: gray;
+
+}
+
+
+.detailMainCon{
+  padding: 1rem 4rem;
+}
+
+.detailBox {
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 60rem;
+
 }

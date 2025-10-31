@@ -2,8 +2,6 @@
 import { useParams } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const JobDetailsPage = () => {
@@ -31,14 +29,14 @@ const JobDetailsPage = () => {
 
     
   return (
-    <main>
+    <main className="detailMainCon">
     <h1>{jobs.title}</h1>
-    <div>
+    <div className="detailBox">
         <p><strong>Company Name:</strong> {jobs.companyName}</p>
         <p><strong>Location:</strong> {jobs.location}</p>
         <p><strong>Salary:</strong> {jobs.salary}</p>
         <p><strong>Job Type:</strong>{jobs.jobType}</p>
-        <p><strong>Description:</strong> {jobs.description}</p>
+        <p><strong>Description:</strong> {jobs.jobDescription}</p>
         <p><strong>Qualifications:</strong>{jobs.qualifications}</p>
     </div>
 

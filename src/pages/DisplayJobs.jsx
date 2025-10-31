@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 const DisplayJobs = () => {
   const [jobs, setJobs] = useState([]);
+  const [searchInput, setSearchInput] = useState([]);
 
   async function fetchJobs() {
     try {
@@ -41,8 +42,21 @@ const DisplayJobs = () => {
     }
   }
 
+  function handleSearch(value){
+    setSearchInput(value);
+    console.log(searchInput, "value");
+    // console.log()
+    const filterJobs = jobs.filter((item) => item.title.toLowerCase().includes(searchInput.toLowerCase()));
+    console.log(filterJobs, "filter")
+    setJobs(filterJobs);
+    
+  }
+
   return (
     <main className="mainCon">
+    <div className="search">
+    <input type="search" onChange={(e) => handleSearch(e.target.value)} placeholder="Search by Job Title...." className="seachbar" value={searchInput} />
+    </div>
       <h1  className="tex" >All Jobs</h1>
       <div className="allJobsCon">
         {jobs.map((job) => (
