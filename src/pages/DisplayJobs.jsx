@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const DisplayJobs = () => {
   const [jobs, setJobs] = useState([]);
@@ -42,22 +42,29 @@ const DisplayJobs = () => {
     }
   }
 
-  function handleSearch(value){
+  function handleSearch(value) {
     setSearchInput(value);
     console.log(searchInput, "value");
     // console.log()
-    const filterJobs = jobs.filter((item) => item.title.toLowerCase().includes(searchInput.toLowerCase()));
-    console.log(filterJobs, "filter")
+    const filterJobs = jobs.filter((item) =>
+      item.title.toLowerCase().includes(searchInput.toLowerCase())
+    );
+    console.log(filterJobs, "filter");
     setJobs(filterJobs);
-    
   }
 
   return (
     <main className="mainCon">
-    <div className="search">
-    <input type="search" onChange={(e) => handleSearch(e.target.value)} placeholder="Search by Job Title...." className="seachbar" value={searchInput} />
-    </div>
-      <h1  className="tex" >All Jobs</h1>
+      <div className="search">
+        <input
+          type="search"
+          onChange={(e) => handleSearch(e.target.value)}
+          placeholder="Search by Job Title...."
+          className="seachbar"
+          value={searchInput}
+        />
+      </div>
+      <h1 className="tex">All Jobs</h1>
       <div className="allJobsCon">
         {jobs.map((job) => (
           <div key={job._id} className="JobCard">
@@ -75,8 +82,8 @@ const DisplayJobs = () => {
               {job.jobType}
             </p>
             <div className="btns">
-            <Link to={`/jobs/${job?._id}`}>
-              <button className="seeDetail">See Details</button>
+              <Link to={`/jobs/${job?._id}`}>
+                <button className="seeDetail">See Details</button>
               </Link>
               <button className="delete" value={job._id} onClick={handleDelete}>
                 Delete
