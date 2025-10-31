@@ -32,8 +32,8 @@ const DisplayJobs = () => {
                 <p><strong>Location: </strong>{job.location}</p>
                 <p><strong>Job Type: </strong>{job.jobType}</p>
                 <div className="btns">
-                    <button>See Details</button>
-                    <button>Delete</button>
+                    <button className='seeDetail'>See Details</button>
+                    <button className='delete'>Delete</button>
                 </div>
             </div>
         ))}
@@ -44,3 +44,4 @@ const DisplayJobs = () => {
 }
 
 export default DisplayJobs
+
