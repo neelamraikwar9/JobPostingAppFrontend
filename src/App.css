@@ -1,3 +1,14 @@
+
+.mainCon {
+  border: 3px solid rgb(206, 53, 53);
+  padding: 1rem;
+}
+
+.tex{
+  padding-left: 4rem;
+}
+
+
 .allJobsCon {
   border: 1px solid gray;
   display: flex;
@@ -6,50 +17,53 @@
   /* height: 60rem; */
   padding: 1rem;
   margin-bottom: 1.5rem;
-  
-} 
+  margin-left: 4rem;
+
+}
 
 .JobCard {
   border: 1px solid gray;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 2rem;
   width: 18rem;
   height: 18rem;
   margin: 1.3rem;
   border-radius: 0.5rem;
-  
+
 }
 
 .btns {
-  border: 1px solid blue;
-  gap: 4rem;
+  /* border: 1px solid blue; */
+  gap: 2rem;
   display: flex;
 }
 
-.btns .seeDetail{
+.btns .seeDetail {
   color: white;
   background-color: oklch(54.6% 0.245 262.881);
   border-color: oklch(54.6% 0.245 262.881);
   border-radius: 0.3rem;
   padding: 0.4rem;
   width: 7rem
-
 }
 
-.btns .delete{
+.btns .delete {
   color: white;
   background-color: oklch(58.6% 0.253 17.585);
   border-color: oklch(58.6% 0.253 17.585);
   border-radius: 0.3rem;
   padding: 0.3;
-  width: 7rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                  rem;
+  width: 7rem;
 }
 
-.delete:hover{
+.delete:hover {
   background-color: oklch(64.5% 0.246 16.439);
+  border-color: oklch(64.5% 0.246 16.439);
 }
 
-.seeDetail:hover{
+.seeDetail:hover {
   background-color: oklch(62.3% 0.214 259.815);
+  border-color: oklch(62.3% 0.214 259.815);
 }
